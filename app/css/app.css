@@ -1,0 +1,122 @@
+body {
+  padding: 10px;
+  background-color: #BB79EC !important;
+}
+
+.card {
+  height: 220px;
+  min-width: 330px;
+  margin-bottom: 20px;
+  width:200px;
+  display: inline-block;
+  border: solid #aaa 1px;
+  margin-right: 25px; 
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 5px 5px 5px #533669;
+}
+
+div {
+  /*border: solid #bbb 1px;*/
+}
+
+.titleContainer {
+  height: 50px;
+  width: 100%;
+}
+
+.contentContainer {
+  height: 170px;
+}
+
+.graphContainer {
+  clear: both;
+  width: 70%;
+  height: 100%;
+  float: left;
+  min-width: 200px;
+}
+
+.statsContainer {
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+
+.graph {
+  width: 70%;
+  height: 55%;
+}
+
+.graphText {
+  height: 20%;
+  color: #aaa;
+  font-size: 10px;
+}
+
+.imgDiv {
+  width: 20%;
+  float: left;
+}
+
+.imgDiv img {
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  height: 78px;
+  min-width: 78px;
+}
+
+.circle {
+  width: 78px;
+  height: 78px; 
+  -moz-border-radius: 150px;
+  -webkit-border-radius: 150px;
+  border-radius: 150px;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+.inner {
+    padding-top: 30px;
+}
+
+.name {
+  float: right;
+  width: 70%;
+  margin-left: 10px;
+}
+
+.namerow1 {
+  font-size: 18px;
+  -webkit-margin-after: 0.2em;
+}
+
+.namerow2 {
+  -webkit-margin-before: 0.1em;
+  color: #aaa;
+}
+
+.total {
+  color: green;
+  font-size: 18px;
+}
+
+.impressionsCount {
+  color: orange;
+  font-size: 18px;
+}
+
+.statsText {
+  color: #aaa;  
+}
+
+.conversionsCount {
+  color: blue;
+  font-size: 18px;
+}
+
+.cardContainer {
+  padding: 10px;
+  height: 100%;
+}

@@ -1,0 +1,51 @@
+<div class="container-fluid">
+ <div class="row-fluid">
+  <div ng-repeat="user in users" class="card">
+    <div class='cardContainer'>
+    <div class='titleContainer'>
+      <div class='imgDiv'>
+          <div ng-switch on='hasAvatar(user.id)'>
+            <img ng-switch-when='true' ng-src="{{user.avatar}}">
+            <div ng-switch-when='false' style="background-color:{{user.randomColor}}" class='circle'><div class='inner'>{{user.name[0]}}</div></div>
+          </div>
+      </div>
+      <div class='name'>
+        <p class='namerow1'>{{user.name}}</p>
+        <p class='namerow2'>{{user.occupation}}</p>
+      </div>
+    </div>
+    <div class='contentContainer'>
+      <div class='graphContainer'>
+        <div class='graph'>
+          <canvas id='{{user.chartID}}' width='200' height='100'></canvas>
+        </div>
+        <div class='graphText'>
+          Conversions {{user.conversionsPerDayDateRange}}
+        </div>
+      </div>
+      <div class='statsContainer'>
+        <div class='impressionsContainer'>
+          <div class='impressionsCount'>
+            {{user.totals.impressions}}
+          </div>
+          <div class='statsText'>
+            Impressions
+          </div>
+        </div>
+        <div class='conversionsContainer'>
+          <div class='conversionsCount'>
+            {{user.totals.conversions}}
+          </div>
+          <div class='statsText'>
+            Conversions
+          </div>
+        </div>
+        <div class='total'>
+          {{user.totals.revenue | currency}}
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
